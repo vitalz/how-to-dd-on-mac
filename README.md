@@ -1,5 +1,5 @@
 How is to clone a disk on macOS?  
-This manual avoid use of modern packages like *coreutils* for backward compatibility reasons: `dd` is old Unix command.
+This manual avoids use of modern packages like *coreutils* for backward compatibility reasons: `dd` is an old Unix command.
 
 Obtain a list of disks attached:
 ```bash
@@ -36,7 +36,7 @@ Vitals-Mac-mini:~ vital$ diskutil list
 In this example a smaller Linux source disk /dev/disk2 has to be copied on a bigger target disk /dev/disk3   
 Keep in mind that MacOS as BSD family uses /dev/rdisk as a raw disk what is something closer to a physical disk.
 
-Unmount target disk
+Unmount a target disk
 ```bash
 diskutil unmountDisk /dev/rdisk3
 ```
